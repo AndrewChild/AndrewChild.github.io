@@ -2480,7 +2480,7 @@
 		-ms-justify-content: space-between;
 		justify-content: space-between;
 		background-color: #1f1815;
-		background-attachment: scroll,								fixed;
+		background-attachment: fixed,								fixed;
 		background-image: url("images/overlay.png"), url("../../images/bg.jpg");
 		background-position: top left,							top left;
 		background-repeat: repeat,								no-repeat;
@@ -2844,7 +2844,7 @@
 	}
 
 	body.is-touch #header {
-		background-attachment: scroll;
+		background-attachment: fixed;
 		background-size: auto, cover;
 	}
 
@@ -2925,7 +2925,7 @@
 		/* Header */
 
 			#header {
-				background-attachment: scroll;
+				background-attachment: fixed;
 				background-position: top left, center center;
 				background-size: auto,		cover;
 				left: auto;
@@ -2948,10 +2948,10 @@
 		/* Footer */
 
 			#footer {
-				background-attachment: scroll;
+				background-attachment: fixed;
 				background-color: #1f1815;
 				background-image: url("images/overlay.png"), url("../../images/bg.jpg");
-				background-position: top left,						bottom center;
+				background-position: top left,						static;
 				background-repeat: repeat,							no-repeat;
 				background-size: auto,							cover;
 				bottom: auto;
