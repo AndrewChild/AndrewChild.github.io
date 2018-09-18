@@ -4319,6 +4319,7 @@ nav .sidenav-trigger {
   z-index: 1;
   height: 56px;
   margin: 0 18px;
+  color: #000;
 }
 
 nav .sidenav-trigger i {
@@ -9035,6 +9036,19 @@ input[type=range]::-ms-thumb {
 .timepicker-clear,
 .timepicker-close {
   padding: 0 20px;
+}
+
+.strokeme
+{
+    /*
+	color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
+	*/
+	font-weight:bold
 }
 
 /* Media Queries */
