@@ -2944,7 +2944,7 @@ ul.staggered-list li {
 .page-footer {
   padding-top: 20px;
   color: #fff;
-  background-color: #ee6e73;
+  background-color: #69995D;
 }
 
 .page-footer .footer-copyright {
@@ -5272,7 +5272,7 @@ small {
   height: 40px;
   line-height: 40px;
   padding: 0;
-  background-color: teal;
+  background-color: #69995D;
   border-radius: 50%;
   -webkit-transition: background-color .3s;
   transition: background-color .3s;
@@ -5690,6 +5690,10 @@ body.keyboard-focused .dropdown-content li:focus {
 
 .waves-effect.waves-teal .waves-ripple {
   background-color: rgba(0, 150, 136, 0.7);
+}
+
+.waves-effect.waves-main .waves-ripple {
+  background-color: rgba(105, 153, 93, 1);
 }
 
 .waves-effect input[type="button"], .waves-effect input[type="reset"], .waves-effect input[type="submit"] {
@@ -7595,7 +7599,7 @@ input[type=range]::-ms-thumb {
 }
 
 .sidenav li > a.btn-floating:hover {
-  background-color: teal;
+  background-color: #69995D;
 }
 
 .sidenav li > a > i,
