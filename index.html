@@ -6,19 +6,24 @@
 	<title>Andrew Child</title>
 	
 	<!-- CSS  -->
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-	<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<style>
 		:root {
-			--main: #69995D
-			--main-dark: #4D7044
-			--alt: #574D68
-			back-dark: #4F585D
-			back-light: #878B8C
+			--main: #69995D;
+			--main-dark: #4D7044;
+			--main-light: #8CBA80;
+			--alt: #011936;
+			--alt-light: #34475E;
+			--back: #465362;
+			--grey: #DFDFDF;
+			--grey-light: #EAEAEA;
 		}
 	</style>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<!-- <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="screen,projection"/> -->
+	<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="css/gallery.css" rel="stylesheet" id="bootstrap-css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 	<nav class="white" role="navigation">
@@ -49,8 +54,8 @@
 		<div class="section no-pad-bot">
 			<div class="container">
 				<br><br>
-				<h1 class="header center text-lighten-2 strokeme" style="color:#69995D">Andrew Child</h1>
-				<div class="row center strokeme">
+				<h1 class="header center text-lighten-2" style="color:#69995D">Andrew Child</h1>
+				<div class="row center">
 					<h3>
 						<i><a href="https://www.facebook.com/an.child" class="fa fa-facebook" style="font-size:32px;color:#69995D;"><span class="label"></span></a></i>
 						&nbsp;
@@ -66,6 +71,7 @@
 		</div>
 		<div class="parallax"><img src="./images/home_bg1.jpg" alt="Unsplashed background img 1"></div>
 	</div>
+	
 	
 	<div class="container">
 		<div class="section">
@@ -174,55 +180,17 @@
 		</div>
 	</div>
 	
+
 	
 	<div class="parallax-container valign-wrapper">
 		<div class="section no-pad-bot">
 			<div class="container">
-				<!-- <div class="row center">
-					<h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
-				</div> -->
 			</div>
 		</div>
 		<div class="parallax"><img src="./images/home_bg1.jpg" alt="Unsplashed background img 2"></div>
 	</div>  
 	
 	<footer class="page-footer">
-		<!--
-		<div class="container">
-			<div class="row">
-				<div class="col l6 s12">
-				<h5 class="white-text">Contact Me</h5>
-				<p class="grey-text text-lighten-4">
-					<i><a href="https://www.facebook.com/an.child" class="fa fa-facebook" style="font-size:18px;color:white"><span class="label"></span></a></i>
-					&nbsp;
-					<i><a href="https://www.instagram.com/iamandrewchild/" class="fa fa-instagram" style="font-size:18px;color:white"><span class="label"></span></a></i>
-					&nbsp;
-					<i><a href="https://www.linkedin.com/in/anchild/" class="fa fa-linkedin" style="font-size:18px;color:white"><span class="label"></span></a></i>
-					&nbsp;
-					<i><a href="mailto:andrew@iamandrewchild.com" class="fa fa-envelope-o" style="font-size:18px;color:white"><span class="label"></span></a></i></p>
-				</div>
-				<div class="col l3 s12">
-				<h5 class="white-text">Settings</h5>
-				<ul>
-					<li><a class="white-text" href="#!">Link 1</a></li>
-					<li><a class="white-text" href="#!">Link 2</a></li>
-					<li><a class="white-text" href="#!">Link 3</a></li>
-					<li><a class="white-text" href="#!">Link 4</a></li>
-				</ul>
-				</div>
-				<div class="col l3 s12">
-				<h5 class="white-text">Connect</h5>
-				<ul>
-					<li><a class="white-text" href="#!">Link 1</a></li>
-					<li><a class="white-text" href="#!">Link 2</a></li>
-					<li><a class="white-text" href="#!">Link 3</a></li>
-					<li><a class="white-text" href="#!">Link 4</a></li>
-				</ul>
-				</div>
-				
-			</div>
-		</div>
-		-->
 		<div class="footer-copyright">
 			<div class="container">
 			Made with <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
@@ -235,12 +203,13 @@
 	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 	<script src="js/materialize.js"></script>
 	<script src="js/init.js"></script>
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.poptrox.min.js"></script>
-	<script src="assets/js/skel.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-	<script src="assets/js/main.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.poptrox.min.js"></script>
+	<script src="js/skel.min.js"></script>
+	<script src="js/util.js"></script>
+	<script src="js/breakpoints.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/gallery.js"></script>
 	
 </body>
 </html>

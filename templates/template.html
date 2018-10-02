@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>Andrew Child</title>
+	
+	<!-- CSS  -->
+	<style>
+		:root {
+			--main: #69995D;
+			--main-dark: #4D7044;
+			--main-light: #8CBA80;
+			--alt: #011936;
+			--alt-light: #34475E;
+			--back: #465362;
+			--grey: #DFDFDF;
+			--grey-light: #EAEAEA;
+		}
+	</style>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<!-- <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="screen,projection"/> -->
+	<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="css/gallery.css" rel="stylesheet" id="bootstrap-css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<nav class="white" role="navigation">
+		<div class="nav-wrapper container">
+			<a id="logo-container" href="index.html" class="brand-logo">Home</a>
+			<ul class="right hide-on-med-and-down">
+				<li><a href="photography.html">Photography</a></li>
+				<li><a href="climbing.html">Climbing</a></li>
+				<li><a href="bio.html">Bio</a></li>
+				<li><a href="projects.html">Projects</a></li>
+				<li><a href="art.html">Art</a></li>
+				<li><a href="professional.html">Professional</a></li>
+			</ul>
+		
+			<ul id="nav-mobile" class="sidenav">
+				<li><a href="photography.html">Photography</a></li>
+				<li><a href="climbing.html">Climbing</a></li>
+				<li><a href="bio.html">Bio</a></li>
+				<li><a href="projects.html">Projects</a></li>
+				<li><a href="art.html">Art</a></li>
+				<li><a href="professional.html">Professional</a></li>
+			</ul>
+			<a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+		</div>
+	</nav>
+
+	<div id="index-banner" class="parallax-container">
+		<div class="section no-pad-bot">
+			<div class="container">
+				<br><br>
+				<h1 class="header center text-lighten-2" style="color:#69995D">Andrew Child</h1>
+				<div class="row center">
+					<h3>
+						<i><a href="https://www.facebook.com/an.child" class="fa fa-facebook" style="font-size:32px;color:#69995D;"><span class="label"></span></a></i>
+						&nbsp;
+						<i><a href="https://www.instagram.com/iamandrewchild/" class="fa fa-instagram" style="font-size:32px;color:#69995D;"><span class="label"></span></a></i>
+						&nbsp;
+						<i><a href="https://www.linkedin.com/in/anchild/" class="fa fa-linkedin" style="font-size:32px;color:#69995D;"><span class="label"></span></a></i>
+						&nbsp;
+						<i><a href="mailto:andrew@iamandrewchild.com" class="fa fa-envelope-o" style="font-size:32px;color:#69995D;"><span class="label"></span></a></i>
+					</h3>
+				</div>
+				<br><br>
+			</div>
+		</div>
+		<div class="parallax"><img src="./images/home_bg1.jpg" alt="Unsplashed background img 1"></div>
+	</div>
+	
+	{% block content %}
+	
+	{% endblock %}
+	
+	<div class="parallax-container valign-wrapper">
+		<div class="section no-pad-bot">
+			<div class="container">
+			</div>
+		</div>
+		<div class="parallax"><img src="./images/home_bg1.jpg" alt="Unsplashed background img 2"></div>
+	</div>  
+	
+	<footer class="page-footer">
+		<div class="footer-copyright">
+			<div class="container">
+			Made with <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+			</div>
+		</div>
+	</footer>
+	
+	
+	<!--  Scripts-->
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="js/materialize.js"></script>
+	<script src="js/init.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.poptrox.min.js"></script>
+	<script src="js/skel.min.js"></script>
+	<script src="js/util.js"></script>
+	<script src="js/breakpoints.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/gallery.js"></script>
+	
+</body>
+</html>

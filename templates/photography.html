@@ -1,0 +1,90 @@
+{% extends "template.html" %}
+{% block content %}
+<div class="container">
+		<div class="section">
+			<div class="row">
+				<div class="col s12 center">
+					<h4>Photography</h4>
+					<p class="left-align light">In summer of 2017 a close friend of mine sold me his old Pentax K-r DSLR for $100 (a bargain). It was an old 12mp Pentax camera with with only one auto focus point and a scratched up viewfinder. I played around with it for several months and learned to enjoy the process of photography. In 2018 I was awarded my first bonus at my job and decided to spend some of it on a "nice" camera. I ended up getting a Sony &alpha;6000 mirrorless camera. A huge step up from what I was using previously. This camera has been one of my best purchases. The pictures it takes are great and its the perfect size to take anywhere.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<section id="gallery">
+		<div class="container">
+		<div class="row">
+			<div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<h4>Gallery</h4>
+			</div>
+		</div>
+		</div>
+		<div class="container">
+		<div class="row">
+			<a class="waves-effect waves-light btn small show-tags">Filter</a>
+		</div>
+		<div class="well well-sm tags" style="display:none;">
+		<div class="row">
+			<div align="center">
+				<a class="waves-effect waves-light btn all-tag" data-tag="all">All Tags</a>
+				<a class="waves-effect waves-light btn disabled clear-tag" data-tag="clear">Clear Tags</a>
+				<!-- <a class="waves-effect waves-light btn ignore ignore-tag" data-tag="ignore">Ignore All</a> -->
+				<a class="waves-effect waves-light btn new-tag" data-tag="New">Sort By: Newest</a>
+				<a class="waves-effect waves-light btn old-tag" data-tag="Old">Sort By: Oldest</a>
+			</div>
+		</div>
+		<div class="row">
+			<div align="center">
+				
+				<!-- Tags -->
+				<!-- Photo type -->
+				<a class="waves-effect waves-light btn filter-tag" data-tag="Portrait" data-enabled="e">Portrait</a>
+				<a class="waves-effect waves-light btn filter-tag" data-tag="Landscape" data-enabled="e">Landscape</a>
+				<a class="waves-effect waves-light btn filter-tag" data-tag="Action" data-enabled="e">Action</a>
+			</div>                                   
+		</div>                                       
+		<div class="row">                            
+			<div align="center">                     
+				<!-- subject	 -->                   
+				<a class="waves-effect waves-light btn filter-tag" data-tag="Climbing" data-enabled="e">Climbing</a>
+				<a class="waves-effect waves-light btn filter-tag" data-tag="Pets" data-enabled="e">Pets</a>
+				<a class="waves-effect waves-light btn filter-tag" data-tag="Wildlife" data-enabled="e">Wildlife</a>
+				<a class="waves-effect waves-light btn filter-tag" data-tag="Other" data-enabled="e">Other</a>
+			</div>                                    
+		</div>                                        
+		<div class="row">                             
+			<div align="center">                      
+				<!-- lens -->                         
+				<a class="waves-effect waves-light btn filter-tag" data-tag="Helios50" data-enabled="e">Helios 44-2 50mm</a>
+				<a class="waves-effect waves-light btn filter-tag" data-tag="Neewer35" data-enabled="e">Neewer 35 mm</a>
+				<a class="waves-effect waves-light btn filter-tag" data-tag="Sony1655" data-enabled="e">Sony 16-55m</a>
+				<a class="waves-effect waves-light btn filter-tag" data-tag="Sigma600" data-enabled="e">Sigma 600mm</a>
+			</div>                                   
+		</div>                                       
+		<div class="row">                            
+			<div align="center">                     
+				<!-- camera -->                      
+				<a class="waves-effect waves-light btn filter-tag" data-tag="a6000" data-enabled="e">Sony &alpha;6000</a>
+				<a class="waves-effect waves-light btn filter-tag" data-tag="kr" data-enabled="e">Pentax K-r</a>
+				<a class="waves-effect waves-light btn filter-tag" data-tag="phone" data-enabled="e">Moto X4</a>
+			</div>
+		</div>
+		<div class="row">
+			<div align="center">
+				<!-- date -->
+			</div>
+		</div>
+		</div>
+		</div>
+		<div class="container">
+		<div class="row gallery_wrapper" ID="#gallery">
+
+		{% block gallery %}
+	
+		{% endblock %}
+			
+		</div>
+		</div>
+	</section>
+	
+{% endblock %}

@@ -6,19 +6,24 @@
 	<title>Andrew Child</title>
 	
 	<!-- CSS  -->
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-	<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<style>
 		:root {
-			--main: #69995D
-			--main-dark: #4D7044
-			--alt: #574D68
-			back-dark: #4F585D
-			back-light: #878B8C
+			--main: #69995D;
+			--main-dark: #4D7044;
+			--main-light: #8CBA80;
+			--alt: #011936;
+			--alt-light: #34475E;
+			--back: #465362;
+			--grey: #DFDFDF;
+			--grey-light: #EAEAEA;
 		}
 	</style>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<!-- <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="screen,projection"/> -->
+	<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="css/gallery.css" rel="stylesheet" id="bootstrap-css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 	<nav class="white" role="navigation">
@@ -67,24 +72,179 @@
 		<div class="parallax"><img src="./images/home_bg1.jpg" alt="Unsplashed background img 1"></div>
 	</div>
 	
-	<div class="container">
+	
+<div class="container">
 		<div class="section">
 			<div class="row">
 				<div class="col s12 center">
 					<h4>Photography</h4>
-					<p class="left-align light">In summer of 2017 a close friend of mine sold me his old DSLR for $100 (a bargain). It was an old 12mp Pentax camera with with only one auto focus point and a scratched up viewfinder. I played around with it for several months and learned to enjoy the process of photography. In 2018 I was awarded my first bonus at my job and decided to spend some of it on a "nice" camera. I ended up getting a Sony &alpha;6000 mirrorless camera. A huge step up from what I was using previously. This camera has been one of my best purchases. The pictures it takes are great and its the perfect size to take anywhere.</p>
+					<p class="left-align light">In summer of 2017 a close friend of mine sold me his old Pentax K-r DSLR for $100 (a bargain). It was an old 12mp Pentax camera with with only one auto focus point and a scratched up viewfinder. I played around with it for several months and learned to enjoy the process of photography. In 2018 I was awarded my first bonus at my job and decided to spend some of it on a "nice" camera. I ended up getting a Sony &alpha;6000 mirrorless camera. A huge step up from what I was using previously. This camera has been one of my best purchases. The pictures it takes are great and its the perfect size to take anywhere.</p>
 				</div>
 			</div>
 		</div>
 	</div>
 	
-	<div class="container">
-		<div class="section">
+	<section id="gallery">
+		<div class="container">
+		<div class="row">
+			<div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<h4>Gallery</h4>
+			</div>
+		</div>
+		</div>
+		<div class="container">
+		<div class="row">
+			<a class="waves-effect waves-light btn small show-tags">Filter</a>
+		</div>
+		<div class="well well-sm tags" style="display:none;">
+		<div class="row">
+			<div align="center">
+				<a class="waves-effect waves-light btn all-tag" data-tag="all">All Tags</a>
+				<a class="waves-effect waves-light btn disabled clear-tag" data-tag="clear">Clear Tags</a>
+				<!-- <a class="waves-effect waves-light btn ignore ignore-tag" data-tag="ignore">Ignore All</a> -->
+				<a class="waves-effect waves-light btn new-tag" data-tag="New">Sort By: Newest</a>
+				<a class="waves-effect waves-light btn old-tag" data-tag="Old">Sort By: Oldest</a>
+			</div>
+		</div>
+		<div class="row">
+			<div align="center">
+				
+				<!-- Tags -->
+				<!-- Photo type -->
+				<a class="waves-effect waves-light btn filter-tag" data-tag="Portrait" data-enabled="e">Portrait</a>
+				<a class="waves-effect waves-light btn filter-tag" data-tag="Landscape" data-enabled="e">Landscape</a>
+				<a class="waves-effect waves-light btn filter-tag" data-tag="Action" data-enabled="e">Action</a>
+			</div>                                   
+		</div>                                       
+		<div class="row">                            
+			<div align="center">                     
+				<!-- subject	 -->                   
+				<a class="waves-effect waves-light btn filter-tag" data-tag="Climbing" data-enabled="e">Climbing</a>
+				<a class="waves-effect waves-light btn filter-tag" data-tag="Pets" data-enabled="e">Pets</a>
+				<a class="waves-effect waves-light btn filter-tag" data-tag="Wildlife" data-enabled="e">Wildlife</a>
+				<a class="waves-effect waves-light btn filter-tag" data-tag="Other" data-enabled="e">Other</a>
+			</div>                                    
+		</div>                                        
+		<div class="row">                             
+			<div align="center">                      
+				<!-- lens -->                         
+				<a class="waves-effect waves-light btn filter-tag" data-tag="Helios50" data-enabled="e">Helios 44-2 50mm</a>
+				<a class="waves-effect waves-light btn filter-tag" data-tag="Neewer35" data-enabled="e">Neewer 35 mm</a>
+				<a class="waves-effect waves-light btn filter-tag" data-tag="Sony1655" data-enabled="e">Sony 16-55m</a>
+				<a class="waves-effect waves-light btn filter-tag" data-tag="Sigma600" data-enabled="e">Sigma 600mm</a>
+			</div>                                   
+		</div>                                       
+		<div class="row">                            
+			<div align="center">                     
+				<!-- camera -->                      
+				<a class="waves-effect waves-light btn filter-tag" data-tag="a6000" data-enabled="e">Sony &alpha;6000</a>
+				<a class="waves-effect waves-light btn filter-tag" data-tag="kr" data-enabled="e">Pentax K-r</a>
+				<a class="waves-effect waves-light btn filter-tag" data-tag="phone" data-enabled="e">Moto X4</a>
+			</div>
+		</div>
+		<div class="row">
+			<div align="center">
+				<!-- date -->
+			</div>
+		</div>
+		</div>
+		</div>
+		<div class="container">
+		<div class="row gallery_wrapper" ID="#gallery">
+
+		
+
+			<div class="gallery_product col s12 m4 filter  Neewer35 a6000" data-date=" 180623">
+				<a  href="images/photography/gal/DSC02914 - Copy.jpg" class="gallery-img thumb"><img src="images/photography/thumbs/DSC02914 - Copy.jpg" class="gallery-img thumb"></a>
+			</div>
+
+			<div class="gallery_product col s12 m4 filter  Portrait Neewer35 a6000" data-date=" 180721">
+				<a  href="images/photography/gal/DSC03117.jpg" class="gallery-img thumb"><img src="images/photography/thumbs/DSC03117.jpg" class="gallery-img thumb"></a>
+			</div>
+
+			<div class="gallery_product col s12 m4 filter  Portrait Neewer35 a6000 Pets" data-date=" 180721">
+				<a  href="images/photography/gal/DSC03170.jpg" class="gallery-img thumb"><img src="images/photography/thumbs/DSC03170.jpg" class="gallery-img thumb"></a>
+			</div>
+
+			<div class="gallery_product col s12 m4 filter  Portrait Neewer35 a6000 Pets" data-date=" 180721">
+				<a  href="images/photography/gal/DSC03172.jpg" class="gallery-img thumb"><img src="images/photography/thumbs/DSC03172.jpg" class="gallery-img thumb"></a>
+			</div>
+
+			<div class="gallery_product col s12 m4 filter  Climbing Sony1655 a6000 Action" data-date=" 180721">
+				<a  href="images/photography/gal/DSC03283.jpg" class="gallery-img thumb"><img src="images/photography/thumbs/DSC03283.jpg" class="gallery-img thumb"></a>
+			</div>
+
+			<div class="gallery_product col s12 m4 filter  Climbing Sony1655 a6000 Action" data-date=" 180721">
+				<a  href="images/photography/gal/DSC03290.jpg" class="gallery-img thumb"><img src="images/photography/thumbs/DSC03290.jpg" class="gallery-img thumb"></a>
+			</div>
+
+			<div class="gallery_product col s12 m4 filter  Climbing Sony1655 a6000 Action" data-date=" 180721">
+				<a  href="images/photography/gal/DSC03301.jpg" class="gallery-img thumb"><img src="images/photography/thumbs/DSC03301.jpg" class="gallery-img thumb"></a>
+			</div>
+
+			<div class="gallery_product col s12 m4 filter  Climbing Sony1655 a6000" data-date=" 180721">
+				<a  href="images/photography/gal/DSC03367.jpg" class="gallery-img thumb"><img src="images/photography/thumbs/DSC03367.jpg" class="gallery-img thumb"></a>
+			</div>
+
+			<div class="gallery_product col s12 m4 filter  Pets Helios50 Portrait a6000" data-date=" 180907">
+				<a  href="images/photography/gal/DSC03516.jpg" class="gallery-img thumb"><img src="images/photography/thumbs/DSC03516.jpg" class="gallery-img thumb"></a>
+			</div>
+
+			<div class="gallery_product col s12 m4 filter  Pets Helios50 Portrait a6000" data-date=" 180907">
+				<a  href="images/photography/gal/DSC03546.jpg" class="gallery-img thumb"><img src="images/photography/thumbs/DSC03546.jpg" class="gallery-img thumb"></a>
+			</div>
+
+			<div class="gallery_product col s12 m4 filter  Pets Helios50 Portrait a6000" data-date=" 180916">
+				<a  href="images/photography/gal/DSC03605.jpg" class="gallery-img thumb"><img src="images/photography/thumbs/DSC03605.jpg" class="gallery-img thumb"></a>
+			</div>
+
+			<div class="gallery_product col s12 m4 filter  Pets Helios50 Portrait a6000" data-date=" 180916">
+				<a  href="images/photography/gal/DSC03609.jpg" class="gallery-img thumb"><img src="images/photography/thumbs/DSC03609.jpg" class="gallery-img thumb"></a>
+			</div>
+
+			<div class="gallery_product col s12 m4 filter  Pets Helios50 Portrait a6000" data-date=" 180916">
+				<a  href="images/photography/gal/DSC03621.jpg" class="gallery-img thumb"><img src="images/photography/thumbs/DSC03621.jpg" class="gallery-img thumb"></a>
+			</div>
+
+			<div class="gallery_product col s12 m4 filter  Pets Helios50 Portrait a6000" data-date=" 180916">
+				<a  href="images/photography/gal/DSC03629.jpg" class="gallery-img thumb"><img src="images/photography/thumbs/DSC03629.jpg" class="gallery-img thumb"></a>
+			</div>
+
+			<div class="gallery_product col s12 m4 filter  Pets Helios50 Portrait a6000" data-date=" 180916">
+				<a  href="images/photography/gal/DSC03645.jpg" class="gallery-img thumb"><img src="images/photography/thumbs/DSC03645.jpg" class="gallery-img thumb"></a>
+			</div>
+
+			<div class="gallery_product col s12 m4 filter  a6000 Neewer35 Portrait " data-date=" 180623">
+				<a  href="images/photography/gal/DSC02322 - Copy.jpg" class="gallery-img thumb"><img src="images/photography/thumbs/DSC02322 - Copy.jpg" class="gallery-img thumb"></a>
+			</div>
+
+			<div class="gallery_product col s12 m4 filter  a6000 Neewer35 Action" data-date=" 180623">
+				<a  href="images/photography/gal/DSC02435 - Copy.jpg" class="gallery-img thumb"><img src="images/photography/thumbs/DSC02435 - Copy.jpg" class="gallery-img thumb"></a>
+			</div>
+
+			<div class="gallery_product col s12 m4 filter  a6000 Neewer35 Landscape" data-date=" 180623">
+				<a  href="images/photography/gal/DSC02505 - Copy.jpg" class="gallery-img thumb"><img src="images/photography/thumbs/DSC02505 - Copy.jpg" class="gallery-img thumb"></a>
+			</div>
+
+			<div class="gallery_product col s12 m4 filter  a6000 Neewer35 Other" data-date=" 180623">
+				<a  href="images/photography/gal/DSC02541 - Copy.jpg" class="gallery-img thumb"><img src="images/photography/thumbs/DSC02541 - Copy.jpg" class="gallery-img thumb"></a>
+			</div>
+
+			<div class="gallery_product col s12 m4 filter  a6000 Neewer35 Landscape" data-date=" 180623">
+				<a  href="images/photography/gal/DSC02601 - Copy.jpg" class="gallery-img thumb"><img src="images/photography/thumbs/DSC02601 - Copy.jpg" class="gallery-img thumb"></a>
+			</div>
+
+			<div class="gallery_product col s12 m4 filter  a6000 Neewer35 Portrait" data-date=" 180623">
+				<a  href="images/photography/gal/DSC02606 - Copy.jpg" class="gallery-img thumb"><img src="images/photography/thumbs/DSC02606 - Copy.jpg" class="gallery-img thumb"></a>
+			</div>
+
+
+			
+		</div>
+		</div>
+	</section>
 	
 
-		</div>
-	</div>
-	
 	
 	<div class="parallax-container valign-wrapper">
 		<div class="section no-pad-bot">
@@ -107,11 +267,13 @@
 	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 	<script src="js/materialize.js"></script>
 	<script src="js/init.js"></script>
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.poptrox.min.js"></script>
-	<script src="assets/js/skel.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.poptrox.min.js"></script>
+	<script src="js/skel.min.js"></script>
+	<script src="js/util.js"></script>
+	<script src="js/breakpoints.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/gallery.js"></script>
 	
 </body>
 </html>

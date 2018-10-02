@@ -1,0 +1,8 @@
+{% extends "photography.html" %}
+{% block gallery %}
+{% for img in images %}
+			<div class="gallery_product col s12 m4 filter {{ img.tags }}" data-date="{{ img.date }}">
+				<a  href="images/photography/gal/{{ img.name }}" class="gallery-img thumb"><img src="images/photography/thumbs/{{ img.name }}" class="gallery-img thumb"></a>
+			</div>
+{% endfor %}
+{% endblock %}
