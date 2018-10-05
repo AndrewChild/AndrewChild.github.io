@@ -1,4 +1,5 @@
 {% extends "template.html" %}
+{% set active_page = "Art" %}
 {% block content %}
 	<div class="container">
 		<div class="section">
@@ -11,11 +12,91 @@
 		</div>
 	</div>
 	
-	<div class="container">
-		<div class="section">
-	
-
+	<section id="gallery">
+		<div class="container">
+		<div class="row">
+			<div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<h4>Gallery</h4>
+			</div>
 		</div>
-	</div>
+		</div>
+		<div class="container">
+		<!-- <div class="row"> -->
+			<!-- <a class="waves-effect waves-light btn small show-equipment">Equipment</a> -->
+		<!-- </div> -->
+		<!-- <div class="well well-sm equipment" style="display:none;"> -->
+		<!-- <div class="row"> -->
+			<!-- <div class="col s12"> -->
+					<!-- <h4 class="center">Equipment</h4> -->
+					<!-- <h5></h5> -->
+					<!-- <dl> -->
+						<!-- <dt></dt> -->
+						<!-- <dd></dd> -->
+					<!-- </dl> -->
+				<!-- </div> -->
+				<!-- <a class="waves-effect waves-light btn small show-equipment">Collapse</a> -->
+		<!-- </div> -->
+		<!-- </div> -->
+		<div class="row">
+			<a class="waves-effect waves-light btn small show-tags">Filters</a>
+		</div>
+		<div class="well well-sm tags" style="display:none;">
+		<div class="row">
+			<div align="center">
+				<a class="waves-effect waves-light btn all-tag" data-tag="all">All Tags</a>
+				<a class="waves-effect waves-light btn disabled clear-tag" data-tag="clear">Clear Tags</a>
+				<!-- <a class="waves-effect waves-light btn ignore ignore-tag" data-tag="ignore">Ignore All</a> -->
+				<a class="waves-effect waves-light btn new-tag" data-tag="New">Sort By: Newest</a>
+				<a class="waves-effect waves-light btn old-tag" data-tag="Old">Sort By: Oldest</a>
+			</div>
+		</div>
+		<div class="row">
+			<div align="center">
+				
+				<!-- Tags -->
+				<!-- Medium -->
+				<a class="waves-effect waves-light btn filter-tag" data-tag="Ink" data-enabled="e">Ink Pens</a>
+				<a class="waves-effect waves-light btn filter-tag" data-tag="Water Color" data-enabled="e">Water Color</a>
+				<a class="waves-effect waves-light btn filter-tag" data-tag="Pencil" data-enabled="e">Pencil</a>
+				<a class="waves-effect waves-light btn filter-tag" data-tag="Markers" data-enabled="e">Markers</a>
+				<a class="waves-effect waves-light btn filter-tag" data-tag="Gel" data-enabled="e">Gel Pens</a>
+			</div>                                   
+		</div>                                       
+		<div class="row">                            
+			<div align="center">                     
+				<!-- subject	 -->                   
+				<a class="waves-effect waves-light btn filter-tag" data-tag="Climbing" data-enabled="e">Climbing</a>
+				<a class="waves-effect waves-light btn filter-tag" data-tag="Landscape" data-enabled="e">Landscape</a>
+				<a class="waves-effect waves-light btn filter-tag" data-tag="People" data-enabled="e">People</a>
+				<a class="waves-effect waves-light btn filter-tag" data-tag="Other" data-enabled="e">Other</a>
+			</div>                                    
+		</div>                                        
+		<div class="row">                             
+			<div align="center">                      
+				<!-- type -->                         
+				<a class="waves-effect waves-light btn filter-tag ignore" data-tag="Sketch" data-enabled="i">Sketch</a>
+				<a class="waves-effect waves-light btn filter-tag" data-tag="Postcard" data-enabled="e">Postcard</a>
+			</div>                                   
+		</div>                                       
+		<div class="row">                            
+			<div align="center">                     
+				<!-- technique -->                      
+				<a class="waves-effect waves-light btn filter-tag" data-tag="lineart" data-enabled="e">Lineart</a>
+				<a class="waves-effect waves-light btn filter-tag" data-tag="stippling" data-enabled="e">Stippling</a>
+				<a class="waves-effect waves-light btn filter-tag" data-tag="gesture" data-enabled="e">Gesture</a>
+			</div>
+		</div>
+		</div>
+		</div>
+		<div class="container">
+		<div class="row gallery_wrapper" ID="#gallery">
+
+		{% block gallery %}
+	
+		{% endblock %}
+			
+		</div>
+		</div>
+	</section>
 	
 {% endblock %}

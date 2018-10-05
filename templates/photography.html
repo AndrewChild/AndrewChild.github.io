@@ -1,4 +1,5 @@
 {% extends "template.html" %}
+{% set active_page = "Photography" %}
 {% block content %}
 <div class="container">
 		<div class="section">
@@ -21,7 +22,50 @@
 		</div>
 		<div class="container">
 		<div class="row">
-			<a class="waves-effect waves-light btn small show-tags">Filter</a>
+			<a class="waves-effect waves-light btn small show-equipment">Equipment</a>
+		</div>
+		<div class="well well-sm equipment" style="display:none;">
+		<div class="row">
+			<div class="col s12">
+					<h4 class="center">Equipment</h4>
+					<h5>Camera</h5>
+					<dl>
+						<dt>Sony &alpha;6000</dt>
+						<dd>I think that this is a great camera for hobby photographers with active lifestyles. Its small enough that there's always space for it in my pack and the photos that it produces are excellent.</dd>
+					</dl>
+					<h5>Lenses</h5>
+					<dl>
+						<dt>Sony 16-55mm f3.5</dt>
+						<dd>This is the standard kit lens that comes with the &alpha;6000. Its nothing special, but its really small so it has that going for it. Also its currently my only auto focus lens. I tend to only use this lens when I think I might need the autofocus.</dd>
+						<dt>Neewer 35mm f1.6</dt>
+						<dd>I bought this lens because its cheap and it has a wide appeture. The pictures it takes are supprisingly sharp. For most cases this is my go to lens.</dd>
+						<dt>Helios 44-2 58mm f2</dt>
+						<dd>This is a very fun lens. Its super sharp and creates nice bokeh. Also it was created in the soviet union, whats not to love. This lens is famous for being create a "swirly bokeh" effect where the bokeh circles get more oblong towards the edges of the photo. I still havent acomplished this effect, but theres still time.</dd>
+						<dt>Sigma 600m f4</dt>
+						<dd>This lens once belonged to my uncle who passed away before I was born. Although its objectively a bad lens its a ton of fun to use and it carries sentimental value. Since it is a mirror lens the focus is fixed at f4 (which is pretty wide at 600mm) and the bokeh that it produces are doughnut shaped rather than circular. This sounds cool, but in most scenarios its distracting. I enjoy this lens because its incredibly hard to get a good shot with it. Its also the only lens that I can get close to wildlife with.</dd>
+					</dl>
+					<h5>Software</h5>
+					<dl>
+						<dt>RawTherapee</dt>
+						<dd>This is my Lightroom alternative. As far as postprocessing goes I usually only adjust the local contrast and color saturation, sometimes I fix the exposure. This software is able to do all that efficiently so it suits my need.</dd>
+						<dt>Gimp</dt>
+						<dd>This is my photoshop alternative. Before I started using RawTherapee I did exposure correction using this. It worked, but not very well. If I ever needed to do some kind of touch up on a photo I'd use this.</dd>
+					</dl>
+					<h5>Other</h5>
+					<dl>
+						<dt>Gobe ND1000 Filter</dt>
+						<dd>So far I have only used this filter to do long exposures of moving water. As far as I can tell it works pretty well. The internet told me not to cheap out on filters, but I did and it works.</dd>
+						<dt>Mountainsmith Trippin Fanny Pack</dt>
+						<dd>This pack is a good size to cary my camera and one or two lenses. I like to use it for day hikes since I can wear a normal hiking pack along with it and everything stays well organized. For shorter trips I just take the fanny pack alone and wear it as a shoulder bag. I also have a smaller fanny pack that baisically only fits my camera which I use while I'm climbing.</dd>
+						<dt>Pedco UltraPod II Tripod</dt>
+						<dd>This tripod isn't perfect, but its small enough to fit in a fanny pack and it hold the camera in one place.</dd>
+					</dl>
+				</div>
+				<a class="waves-effect waves-light btn small show-equipment">Collapse</a>
+		</div>
+		</div>
+		<div class="row">
+			<a class="waves-effect waves-light btn small show-tags">Filters</a>
 		</div>
 		<div class="well well-sm tags" style="display:none;">
 		<div class="row">
@@ -55,7 +99,7 @@
 		<div class="row">                             
 			<div align="center">                      
 				<!-- lens -->                         
-				<a class="waves-effect waves-light btn filter-tag" data-tag="Helios50" data-enabled="e">Helios 44-2 50mm</a>
+				<a class="waves-effect waves-light btn filter-tag" data-tag="Helios50" data-enabled="e">Helios 44-2 58mm</a>
 				<a class="waves-effect waves-light btn filter-tag" data-tag="Neewer35" data-enabled="e">Neewer 35 mm</a>
 				<a class="waves-effect waves-light btn filter-tag" data-tag="Sony1655" data-enabled="e">Sony 16-55m</a>
 				<a class="waves-effect waves-light btn filter-tag" data-tag="Sigma600" data-enabled="e">Sigma 600mm</a>
@@ -67,11 +111,6 @@
 				<a class="waves-effect waves-light btn filter-tag" data-tag="a6000" data-enabled="e">Sony &alpha;6000</a>
 				<a class="waves-effect waves-light btn filter-tag" data-tag="kr" data-enabled="e">Pentax K-r</a>
 				<a class="waves-effect waves-light btn filter-tag" data-tag="phone" data-enabled="e">Moto X4</a>
-			</div>
-		</div>
-		<div class="row">
-			<div align="center">
-				<!-- date -->
 			</div>
 		</div>
 		</div>

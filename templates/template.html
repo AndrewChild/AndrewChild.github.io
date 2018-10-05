@@ -1,4 +1,14 @@
 <!DOCTYPE html>
+{% set navigation_bar = [
+	('index', 'Home'),
+	('Photography', 'Photography'),
+	('Climbing', 'Climbing'),
+	('Bio', 'Bio'),
+	('Projects', 'Projects'),
+	('Art', 'Art'),
+	('Professional', 'Professional')
+] -%}
+{% set active_page = active_page|default('Home') -%}
 <html lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
@@ -28,23 +38,18 @@
 <body>
 	<nav class="white" role="navigation">
 		<div class="nav-wrapper container">
-			<a id="logo-container" href="index.html" class="brand-logo">Home</a>
 			<ul class="right hide-on-med-and-down">
-				<li><a href="photography.html">Photography</a></li>
-				<li><a href="climbing.html">Climbing</a></li>
-				<li><a href="bio.html">Bio</a></li>
-				<li><a href="projects.html">Projects</a></li>
-				<li><a href="art.html">Art</a></li>
-				<li><a href="professional.html">Professional</a></li>
+				{% for href, name in navigation_bar %}
+					<li{% if name == active_page %} class="active"{% endif
+					%}><a href="{{ href|e }}.html">{{ name|e }}</a></li>
+				{% endfor %}
 			</ul>
 		
 			<ul id="nav-mobile" class="sidenav">
-				<li><a href="photography.html">Photography</a></li>
-				<li><a href="climbing.html">Climbing</a></li>
-				<li><a href="bio.html">Bio</a></li>
-				<li><a href="projects.html">Projects</a></li>
-				<li><a href="art.html">Art</a></li>
-				<li><a href="professional.html">Professional</a></li>
+				{% for href, name in navigation_bar %}
+					<li{% if name == active_page %} class="active"{% endif
+					%}><a href="{{ href|e }}.html">{{ name|e }}</a></li>
+				{% endfor %}
 			</ul>
 			<a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 		</div>

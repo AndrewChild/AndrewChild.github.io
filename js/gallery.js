@@ -8,6 +8,10 @@ $(document).ready(function(){
 		$('.tags').toggle('1000');
     });
 	
+	$(".show-equipment").click(function(){
+		$('.equipment').toggle('1000');
+    });
+	
 	$(".all-tag").click(function(){
 		x = document.getElementsByClassName("filter-tag");
 		for (i = 0; i < x.length; i++) {
